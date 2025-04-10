@@ -1,4 +1,6 @@
 # React + Vite
+
+Make sure you have next.js installed on your PC. <br>
 Commands to run: <br>
 <ul>
   <li>Open terminal in the folder containing the above files and folders.</li>
