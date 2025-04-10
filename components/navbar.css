@@ -1,0 +1,66 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, black, grey, silver);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  
+  /* Logo or Title */
+  .navbar .logo {
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Navigation links */
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #00b894; /* Teal highlight on hover */
+  }
+  
+  /* CTA Button (e.g., Detect Now, Login) */
+  .navbar .btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .btn:hover {
+    background-color: #019875;
+  }
+  
+  /* Font style */
+  .marcellus-regular {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

@@ -1,0 +1,68 @@
+/* Overall layout of the page with two columns */
+.page-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Left Column - Article Content */
+  .content {
+    flex: 1 1 60%;
+    padding: 3rem;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: inset -1px 0 0 #ddd;
+  }
+  
+  /* Headings */
+  .content h1 {
+    font-size: 2.5rem;
+    color: #1e1e2f;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content h2 {
+    font-size: 1.6rem;
+    color: #2d3436;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraphs */
+  .content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Unordered lists */
+  .content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  /* Bold text styling */
+  .content b {
+    color: #2c3e50;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .page-container {
+      flex-direction: column;
+    }
+  
+    .content {
+      flex: 1 1 100%;
+      padding: 2rem;
+    }
+  }
+  

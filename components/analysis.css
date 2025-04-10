@@ -1,0 +1,40 @@
+.analysis-container {
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .news-text {
+    font-style: italic;
+    margin: 1rem auto 2rem;
+    color: #555;
+    max-width: 700px;
+  }
+  
+  .result {
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .true-news {
+    background-color: #e8fdf5;
+    color: #0c8a6d;
+  }
+  
+  .fake-news {
+    background-color: #ffecec;
+    color: #b30000;
+  }
+  
+  blockquote {
+    font-style: italic;
+    margin-top: 1rem;
+    color: #333;
+    background: #fff;
+    padding: 1rem;
+    border-left: 4px solid #b30000;
+  }
+  

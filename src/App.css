@@ -1,0 +1,76 @@
+/* Base layout */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+}
+
+/* Sticky Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1c1b2d;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Two column container */
+.app-container {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 2rem;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+/* Shared column styles */
+.column {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Left column (Article) */
+.left-column {
+  flex: 2;
+}
+
+/* Right column (Search box container) */
+.right-column {
+  flex: 1.3;
+  position: relative;
+}
+
+/* Sticky search box */
+.search-container {
+  position: sticky;
+  top: 6rem; /* enough space below navbar */
+  z-index: 999;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .app-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .column {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .search-container {
+    position: static;
+  }
+}
